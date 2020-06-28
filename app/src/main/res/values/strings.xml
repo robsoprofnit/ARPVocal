@@ -2,4 +2,6 @@
     <string name="app_name">ARPVocal</string>
     <string name="logar_com_o_facebook">Logar com o Facebook</string>
     <string name="description">Augmentative and Alternative Communication – AAC</string>
+    <string name="telaresponsavel">TelaResponsavel</string>
+    <string name="description2">Teste tela 2</string>
 </resources>

@@ -9,6 +9,7 @@
     app:layout_constraintHorizontal_bias="0">
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#5d7c77"
@@ -20,7 +21,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/bg_layer_gradient"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="-89dp" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/headline"
@@ -41,5 +42,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.900"
         app:layout_constraintHorizontal_bias="0.5" />
+
+    <TextView
+        android:id="@+id/description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
