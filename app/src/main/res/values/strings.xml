@@ -4,4 +4,8 @@
     <string name="description">Augmentative and Alternative Communication – AAC</string>
     <string name="telaresponsavel">TelaResponsavel</string>
     <string name="description2">Teste tela 2</string>
+    <string name="enviar_mensagem">Enviar</string>
+    <string name="mensagem">Digite sua mensagem</string>
+    <string name="criar_editar_respons_vel">Criar/Editar Responsável</string>
+    <string name="textview">TextView</string>
 </resources>

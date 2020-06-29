@@ -25,11 +25,3 @@ class SplashActivity : AppCompatActivity() {
         }, SPLASH_TIME_OUT)
     }
 }
-/* // This is original code on create
-class SplashActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
-    }
-
-}*/

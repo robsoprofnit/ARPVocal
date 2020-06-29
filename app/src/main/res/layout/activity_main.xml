@@ -5,53 +5,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    app:layout_constraintVertical_bias="0"
-    app:layout_constraintHorizontal_bias="0">
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/appCompatImageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#5d7c77"
-        android:scaleType="centerInside"
-        android:src="@drawable/bg" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg_layer_gradient"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-89dp" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/headline"
-        style="@style/TextAppearance.AppCompat.Headline"
-        android:layout_width="356dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="24dp"
-        android:maxLines="2"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:text="@string/description"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.900"
-        app:layout_constraintHorizontal_bias="0.5" />
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical|center_horizontal">
 
     <TextView
-        android:id="@+id/description2"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/description2"
+        android:text="Menu de Opções inicial"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16000003" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/view_responsavel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="viewResponsavel"
+        android:text="Carregar responsável"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/create_responsavel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="createResponsavel"
+        android:text="Criar responsável"
+        app:layout_constraintEnd_toEndOf="@+id/view_responsavel"
+        app:layout_constraintStart_toStartOf="@+id/view_responsavel"
+        app:layout_constraintTop_toBottomOf="@+id/view_responsavel" />
+
+    <TextView
+        android:id="@+id/teste_mensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Teste Mensagem"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/create_responsavel"
+        app:layout_constraintStart_toStartOf="@+id/create_responsavel"
+        app:layout_constraintTop_toBottomOf="@+id/create_responsavel" />
+
+    <EditText
+        android:id="@+id/mensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/mensagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teste_mensagem" />
+
+    <Button
+        android:id="@+id/enviar_mensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:hint="@string/enviar_mensagem"
+        app:layout_constraintStart_toEndOf="@+id/mensagem"
+        app:layout_constraintTop_toTopOf="@+id/mensagem" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
