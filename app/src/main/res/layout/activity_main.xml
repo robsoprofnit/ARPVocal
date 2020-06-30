@@ -69,6 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:hint="@string/enviar_mensagem"
+        android:onClick="sendMessage"
         app:layout_constraintStart_toEndOf="@+id/mensagem"
         app:layout_constraintTop_toTopOf="@+id/mensagem" />
 
